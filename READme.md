@@ -29,8 +29,8 @@ To get started with this project, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/newsletter-signup.git
-   cd newsletter-signup
+   git https://github.com/siezer-5997/Newsletter.git
+   cd Newsletter
    ```
 
 2. **Install Dependencies**:
