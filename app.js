@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const https = require('https');
 const { url } = require('inspector');
 const { STATUS_CODES } = require('http');
+const { kill } = require('process');
 const app = express();
 
 app.use(express.static("public"))
@@ -37,7 +38,7 @@ app.post("/", function(req, res){
     const url = "https://us21.api.mailchimp.com/3.0/lists/2b660707a2";
     const options = {
         method: "POST",
-        auth: "Siem:cc5e2c05f92a908ab153565f33cea4c95-us21"
+        auth: "Siem:c5e2c05f92a908ab153565f33cea4c95-us21"
     }
     const request = https.request(url, options, function(response){
         response.on("data", function(data){
@@ -62,7 +63,7 @@ app.post("/failure", function(req, res){
 
 
 app.listen(process.env.PORT || 3000, function(){
-    console.log("Server is running on port 3000.");
+    console.log(`Server is running on http://localhost:3000.`);
 });
 
 // API key 
