@@ -29,7 +29,7 @@ To get started with this project, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git https://github.com/siezer-5997/Newsletter.git
+   git clone https://github.com/siezer-5997/Newsletter.git
    cd Newsletter
    ```
 
